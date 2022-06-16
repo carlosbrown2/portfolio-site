@@ -6,23 +6,25 @@ hide_description: true
 ---
 
 
-<h2>Want to work with me? Get in touch</h2>
-<form method="post" action="https://formspree.io/f/mwkaploj">
-  <div class="fields">
-    <div class="field half">
-      <label for="name">Name</label>
-      <input type="text" name="name" id="name" value="" />
+<div class="form">
+  <div class="title">Want to work with me?</div>
+  <div class="subtitle">Let's get in touch</div>
+  <form method="post" action="https://formspree.io/f/mwkaploj">
+    <div class="input-container ic1">
+      <input type="text" name="name" id="name" value="" class="input"/>
+      <div class="cut"></div>
+      <label for="name" class="placeholder">Name</label>
     </div>
-    <div class="field half">
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email" value="" />
+    <div class="input-container ic2">
+      <input type="email" name="email" id="email" value="" class="input" required/>
+      <div class="cut"></div>
+      <label for="email" class="placeholder">Email</label>
     </div>
-    <div class="field">
-      <label for="message">Message</label>
-      <textarea name="message" id="message" rows="6"></textarea>
+    <div class="input-container ic2">
+      <textarea name="message" id="message" class="input textarea" rows="5"></textarea>
+      <div class="cut"></div>
+      <label for="message" class="placeholder">Message</label>
+      <input type="submit" name="submit" id="submit" value="Send Message" class="submit"/>
     </div>
-  </div>
-  <ul class="actions special">
-    <li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
-  </ul>
-</form>
+  </form>
+</div>
