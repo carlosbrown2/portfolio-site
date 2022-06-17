@@ -1,12 +1,11 @@
 ---
 layout: page
 title: Causal Inference for Data Scientists - Part 1
-description:
+description: Techniques you didn’t know you needed
 sitemap: false
 hide_last_modified: true
 ---
 # Causal Inference for Data Scientists: Part 1
-## Techniques you didn’t know you needed
 
 > This article is the first in a two part series that deals with the underlying concepts and mathematics of Pearlian causal inference. Part 2 will focus on a practical example using the  [DoWhy](https://github.com/microsoft/dowhy) library. If you prefer to begin with implementation first, skip to Part 2 when it becomes available then return here for the theory.
 

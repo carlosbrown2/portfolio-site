@@ -28,7 +28,7 @@ author1:
   # Comment/uncommet to show/hide
   # Rearrange to change the order in which they appear
   social:
-    twitter:         <username>
+    # twitter:         <username>
     github:          carlosbrown2
     # email:           <mail@domain.tld>
     # rss:             https://<url>/feed.xml
@@ -59,7 +59,7 @@ author1:
     # npm:             <username>
     # hackernews:      <username>
     # trello:          <firstnamelastname>
-    # linkedin:        <firstname-lastname-string>
+    linkedin:        carlos-brown-eit
     # xing:            <firstname_lastname_counter>
     # blogger:         <number>
     # delicious:       <username>

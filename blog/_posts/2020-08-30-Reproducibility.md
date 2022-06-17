@@ -1,13 +1,12 @@
 ---
 layout: post
 title: Reproducibility in Data Science
-description:
+description: It means more than you think
 sitemap: false
 hide_last_modified: true
 ---
 ![Cover Image](/assets/img/blog/hongkong.jpeg){:.lead width="1920" height="1080" loading="lazy"}
 
-## It means more than you think
 
 Science as a pursuit has always had Reproducibility at its core. After all, if a claim is made about the physical world, and the evidence does not support such a claim, it doesn’t matter how much ideology or vested interest the idea has pushing it, there’s no reason for you to believe it. In a seemingly post truth world that we live in, where politicians, the media, and voices on social media propagate information that is often varying shades of dishonest, it pays dividends for your integrity to make  _reproducible_  claims. It’s part and parcel to your job as a data scientist.
 
