@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en"><!--
+ __  __                __                                     __
+/\ \/\ \              /\ \             __                    /\ \
+\ \ \_\ \   __  __    \_\ \      __   /\_\      __       ___ \ \ \/'\
+ \ \  _  \ /\ \/\ \   /'_` \   /'__`\ \/\ \   /'__`\    /'___\\ \ , <
+  \ \ \ \ \\ \ \_\ \ /\ \L\ \ /\  __/  \ \ \ /\ \L\.\_ /\ \__/ \ \ \\`\
+   \ \_\ \_\\/`____ \\ \___,_\\ \____\ _\ \ \\ \__/.\_\\ \____\ \ \_\ \_\
+    \/_/\/_/ `/___/> \\/__,_ / \/____//\ \_\ \\/__/\/_/ \/____/  \/_/\/_/
+                /\___/                \ \____/
+                \/__/                  \/___/
+
+Powered by Hydejack v9.1.6 <https://hydejack.com/>
+-->
+
+
+
+
+
+
+
+<head>
+  
+
+
+
+
+  <meta name="robots" content="noindex">
+
+
+
+  
+    
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Causal Inference: Part 1 | Carlos Brown</title>
+<meta name="generator" content="Jekyll v3.9.2" />
+<meta property="og:title" content="Causal Inference: Part 1" />
+<meta name="author" content="Carlos Brown" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="Techniques you didn’t know you needed" />
+<meta property="og:description" content="Techniques you didn’t know you needed" />
+<meta property="og:site_name" content="Carlos Brown" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-07-08T00:00:00-06:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Causal Inference: Part 1" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Carlos Brown"},"dateModified":"2022-06-17T16:36:08-06:00","datePublished":"2021-07-08T00:00:00-06:00","description":"Techniques you didn’t know you needed","headline":"Causal Inference: Part 1","mainEntityOfPage":{"@type":"WebPage","@id":"/blog/2021-07-08-Causal-Inference-1/"},"url":"/blog/2021-07-08-Causal-Inference-1/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+  
+    <meta name="keywords" content="Data Science,Writing,Blog,Freelance">
+  
+
+
+
+  <meta name="theme-color" content="rgb(25,55,71)">
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Carlos Brown">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+<meta name="application-name" content="Carlos Brown">
+
+<meta name="generator" content="Hydejack v9.1.6" />
+
+
+<link rel="alternate" href="/blog/2021-07-08-Causal-Inference-1/" hreflang="en">
+
+<link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Carlos Brown" />
+
+
+<link rel="shortcut icon"    href="/assets/icons/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/icons/icon-192x192.png">
+
+<link rel="manifest" href="/assets/site.webmanifest">
+
+<link rel="dns-prefetch" href="https://fonts.googleapis.com"><link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
+
+
+<link rel="preload" href="/assets/img/swipe.svg" as="image" id="_hrefSwipeSVG">
+
+
+
+
+
+
+<script>!function(r,c){"use strict";function a(e,t,n,o){e.addEventListener?e.addEventListener(t,n,o):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n}r.loadJS=function(e,t){var n=c.createElement("script"),e=(n.src=e,t&&a(n,"load",t,{once:!0}),c.scripts[0]);return e.parentNode.insertBefore(n,e),n},r._loaded=!1,r.loadJSDeferred=function(e,t){var n=c.createElement("script");function o(){r._loaded=!0,t&&a(n,"load",t,{once:!0});var e=c.scripts[0];e.parentNode.insertBefore(n,e)}return n.src=e,r._loaded?o():a(r,"load",o,{once:!0}),n},r.setRel=r.setRelStylesheet=function(e){a(c.getElementById(e),"load",function(){this.rel="stylesheet"},{once:!0})}}(window,document);
+!function(a){"use strict";var b=function(b,c,d){function e(a){return h.body?a():void setTimeout(function(){e(a)})}function f(){i.addEventListener&&i.removeEventListener("load",f),i.media=d||"all"}var g,h=a.document,i=h.createElement("link");if(c)g=c;else{var j=(h.body||h.getElementsByTagName("head")[0]).childNodes;g=j[j.length-1]}var k=h.styleSheets;i.rel="stylesheet",i.href=b,i.media="only x",e(function(){g.parentNode.insertBefore(i,c?g:g.nextSibling)});var l=function(a){for(var b=i.href,c=k.length;c--;)if(k[c].href===b)return a();setTimeout(function(){l(a)})};return i.addEventListener&&i.addEventListener("load",f),i.onloadcssdefined=l,l(f),i};"undefined"!=typeof exports?exports.loadCSS=b:a.loadCSS=b}("undefined"!=typeof global?global:this);
+!function(a){if(a.loadCSS){var b=loadCSS.relpreload={};if(b.support=function(){try{return a.document.createElement("link").relList.supports("preload")}catch(b){return!1}},b.poly=function(){for(var b=a.document.getElementsByTagName("link"),c=0;c<b.length;c++){var d=b[c];"preload"===d.rel&&"style"===d.getAttribute("as")&&(a.loadCSS(d.href,d,d.getAttribute("media")),d.rel=null)}},!b.support()){b.poly();var c=a.setInterval(b.poly,300);a.addEventListener&&a.addEventListener("load",function(){b.poly(),a.clearInterval(c)}),a.attachEvent&&a.attachEvent("onload",function(){a.clearInterval(c)})}}}(this);
+!function(w) {
+  w._baseURL = '/';
+  w._publicPath = '/assets/js/';
+  w._noPushState = false;
+  w._noDrawer = false;
+  w._noNavbar = false;
+  w._noToc = false;
+  w._noSearch = false;
+  w._search = {
+    DATA_URL: '/assets/sitedata.json?no-cache',
+    STORAGE_KEY: 'mini-search/',
+    INDEX_KEY: 'index--2022-06-17T16:49:36-06:00',
+  };
+  w._clapButton = true;
+}(window);</script>
+
+
+<script async src="/assets/bower_components/MathJax/es5/tex-mml-chtml.js" id="_MathJax"></script>
+
+
+<!--[if gt IE 8]><!---->
+
+  
+
+
+
+
+<link rel="stylesheet" href="/assets/css/hydejack-9.1.6.css" id="_stylePreload">
+<link rel="stylesheet" href="/assets/icomoon/style.css" id="_iconsPreload">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:700%7CNoto+Sans:400,400i,700,700i&display=swap" id="_fontsPreload">
+
+
+
+  <style id="_pageStyle">
+
+html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79,177,186,0.5);--accent-color-highlight: rgba(79,177,186,0.1);--accent-color-darkened: #409ba3;--theme-color: rgb(25,55,71)}
+
+</style>
+
+
+<!--<![endif]-->
+
+
+
+
+</head>
+
+<body class="no-break-layout">
+  
+
+
+<hy-push-state
+  id="_pushState"
+  replace-selector="#_main"
+  link-selector="a[href]:not([href^='/assets/']):not(.external):not(.no-push-state)"
+  script-selector="script"
+  duration="500"
+  hashchange
+>
+  
+  
+  <div id="_navbar" class="navbar fixed-top">
+  <div class="content">
+    <span class="sr-only">Jump to:</span>
+    <div class="nav-btn-bar">
+      <a id="_menu" class="nav-btn no-hover" href="#_drawer--opened">
+        <span class="sr-only">Navigation</span>
+        <span class="icon-menu"></span>
+      </a>
+      <div class="nav-span"></div>
+    </div>
+  </div>
+</div>
+<hr class="sr-only" hidden />
+
+  <main
+  id="_main"
+  class="content layout-page"
+  role="main"
+>
+  <nav id="breadcrumbs" class="screen-only"><ul>
+  
+  
+    <li><a href="/">home</a></li>
+    
+      <li>
+        
+          <span>/</span>
+          
+          
+          <a href="/blog/">blog</a>
+        
+      </li>
+    
+      <li>
+        
+          <span>/</span>
+          <span>2021-07-08-Causal-Inference-1</span>
+        
+      </li>
+    
+  
+</ul></nav>
+  <article class="page mb6" role="article">
+  <header>
+    <h1 class="page-title">Causal Inference: Part 1</h1>
+    
+
+
+
+  
+    <p class="note-sm" >
+      Techniques you didn’t know you needed
+
+    </p>
+  
+
+
+  </header>
+
+  <blockquote>
+  <p>This article is the first in a two part series that deals with the underlying concepts and mathematics of Pearlian causal inference. Part 2 will focus on a practical example using the  <a href="https://github.com/microsoft/dowhy">DoWhy</a> library. If you prefer to begin with implementation first, skip to Part 2 when it becomes available then return here for the theory.</p>
+</blockquote>
+
+<p><img src="https://miro.medium.com/max/1400/1*zKhsYFFaW_TJQbEC6UeRaQ.jpeg" alt="" /></p>
+
+<p>Causality: Photo by  <a href="https://unsplash.com/@nadir_syzygy?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Nadir sYzYgY</a>  on  <a href="https://unsplash.com/s/photos/cause-and-effect?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
+
+<p>Causal inference has undergone tremendous growth in recent years. This surge has happened in parallel with the rise of Data Science (DS) more broadly, but they still remain distinct in practice. While the science behind causal reasoning has benefited from recent work by Judea Pearl, Donald Rubin, Susan Athey, and many more, the insights they found have not made their way into mainstream DS, despite readily available implementations of these techniques. Many DS practitioners simply do not know about or employ causal reasoning in their workflows and that may be for several reasons…</p>
+
+<ol>
+  <li>The assumptions that go into causal reasoning, like Bayesian models, can be sliced, diced, and debated six ways from Sunday. (thanks to my Linkedin connection Gino Almondo for this insight)</li>
+  <li>People think that correlations are automatically causal and are enough in themselves. Look for this in your workplace and you’ll be surprised how often it shows up.</li>
+  <li>Causal inference is perceived to be hard. We don’t like hard.</li>
+</ol>
+
+<p>These points have varying degrees of validity, but ultimately miss the main point. The main point is that while there are challenges, we have in our hand a set of concepts and techniques that if applied with care, will completely transform the way that data science is practiced and perceived. We get to leverage domain knowledge to make robust inference. Let’s first set up the discussion with some preliminaries.</p>
+
+<h1 id="what-is-causal">What is Causal?</h1>
+
+<p>For this article, we will adopt the interventionist approach to defining causality. We all have an intuitive idea of what is causal, but to work in the language of mathematics we will need something more formal.</p>
+
+<blockquote>
+  <p>The definition is that for two distinct events A and B, A causes B if a change in A corresponds to a change in B, all else being equal.</p>
+</blockquote>
+
+<p>Most of causal inference deals with ensuring the “all else is equal” part. There are other definitions that are similar, with vigorous debate surrounding which is most correct, but we will settle on this one and proceed.</p>
+
+<h1 id="how-do-we-establish-causality">How do we establish Causality?</h1>
+
+<p>Before the causal renaissance of recent times took place, the gold standard in establishing causal links was  <strong>randomized experimentation</strong>.  In many ways they still are. So let’s set the stage by discussing causality in the context of a randomized experiment.</p>
+
+<p>We have an outcome we would like to measure, named Y. We want to see if manipulating a specific treatment X will cause appreciable change in Y. In a randomized trial, such as a drug test, we would obtain a sufficiently large sample (using power analysis) of people  <strong>at random</strong> from the broader population. The participants would be randomly assigned either the drug or a placebo. We would then measure the difference in Placebo group and Drug group, which is called the  <strong>Treatment Effect,</strong> which can be done in a variety of ways (see cohen’s d or CATE). Any effect sizes would then be from the treatment alone and not due to any other factors, or  <strong>confounders</strong>, that may be present.</p>
+
+<h2 id="random-assignment-ensures-that-all-else-being-equal-is-true-in-the-aggregate">Random assignment ensures that “all else being equal” is true in the aggregate.</h2>
+
+<h1 id="the-real-world">The Real World</h1>
+
+<p>Now we come to the main hurdle that we face in causal inference. We don’t always have the time and money to do randomized experiments to establish a causal link. Even when we do, it may not be ethical to do so. We may in the end just have a set of observational data, and a few hypotheses we have built from observation. Can we test them using our non-randomized data? The answer is yes, and that is where our new toolkit comes into play. The techniques we will use will take our  <strong>observational</strong> dataset and transform it into what is called the  <strong>interventional</strong> dataset, from which we can draw causal inferences. The key here is that the data itself is not enough to establish causality (see  <a href="https://en.wikipedia.org/wiki/Simpson%27s_paradox">Simpson’s Paradox</a>). We need more to reason robustly.</p>
+
+<p>Given that the data is not enough, we will draw a literal picture of the world, called a causal graph, that encodes our  <em>assumptions</em> about the data generating process. The  <strong>data generating process</strong>  is the system whose dynamics we are trying to understand. This will help us to construct our interventional distribution, and test whether our model is valid.</p>
+
+<p>We are mirroring the scientific process. We start with a hypothesis, then we model how the world behaves under that hypothesis using our causal graph. Finally we test our model using the data, which may uphold the hypothesis or not. Additionally, we further test the model to see how sensitive it is to changes, unaccounted confounders, and other gotchas. Iterate until your theories fit the facts.</p>
+
+<h1 id="going-deeper">Going Deeper</h1>
+
+<p>Let’s define a few terms…</p>
+
+<p><strong>Intervention:</strong> Actively doing X leads to a change in Y.</p>
+
+<blockquote>
+  <p>Examples: If I push my punk brother, does he get mad? If I give a person the drug, does it make them better?</p>
+</blockquote>
+
+<p><strong>Counterfactual:</strong> What if I hadn’t done X, would Y have still occured?</p>
+
+<blockquote>
+  <p>Examples: If I hadn’t pushed my punk brother, would he have fallen down? If the patient had not been given the drug, would they have gotten better?</p>
+</blockquote>
+
+<p>Reasoning with interventions and counterfactuals mirrors the normal, human approach to understanding causality. We are creating two different worlds and comparing the results in both. If we have an intervention case, and its counterfactual, we can establish causality. In a randomized experiment, we have those two readily in hand at the group level. When the level of analysis changes to the individual, then we realize one of the most fundamental problems we are trying to solve. We see that we have a  <strong>missing data</strong>  problem. We do not have the counterfactual in hand, because the counterfactual for an individual doesn’t exist. You cannot be both treated and untreated simultaneously. Twin studies come close. Thankfully, we have ways to estimate this counterfactual while controlling for everything that may muddy the waters (confound) of our analysis. Remember that we are trying to hold all else equal, which is why we need a counterfactual. Let’s dive into the math to understand what’s going on better.</p>
+
+<h1 id="derivations">Derivations</h1>
+
+<p>Lorem ipsum \(f(x) = x^2\).</p>
+
+<p>When we obtain observational data, what we are getting are probability distributions, whether the data is discrete or continuous. The two main types are joint probabilities and conditional probabilities. Anyone who has taken a basic probability course has covered these topics, but they provide the basis for construction of our causal formulas. Below are two data distributions.</p>
+
+<p><img src="https://miro.medium.com/max/1400/1*SZfjiY5ZhCcNCAtVVXo6GA.png" alt="" /></p>
+
+<p>Observation and Intervention Diagrams</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>On the left, we see the observed model which shows the interrelationships between the variables in our raw data. Given our definition of causality, we need to estimate the effect that changing X has on Y, independent of everything else. For our observed data, we are unable to make a change in X that would not also have corresponded to a change in Z, therefore changes in X are not indicative of causal changes in Y. We need a way to disentangle the confounding effect of Z on X, such that P(X</td>
+      <td>Z) = P(Z), or to put it another way, we need to MANIPULATE the observed data to make the two variables independent. We need to perform graph surgery.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The figure on the right shows us our desired state, post-surgical state. Z and X are not connected and therefore a change in one does not affect the other. This is called  <strong>d-separation</strong>. And since X is still upstream of Y, any change in X will result in a causal change in Y, whether X is changing spontaneously or by direct adjustment.</p>
+
+<h2 id="assumptions">Assumptions</h2>
+
+<p>Now we move on to the derivation that allows us to transform our observed data distribution into our intervention data distribution. We start the derivation with three links between the two. We use P to denote our observational data distribution, and Pₘ to denote the manipulated, intervention data distribution.</p>
+
+\[P(Y|X, Z) = P_m(Y|X, Z)\]
+
+<center><b>Link 1</b></center>
+
+<p>Since the incoming effects of Y remain unchanged between the two graphs, the probability distributions are the same as well. This is our first invariance link.</p>
+
+\[P(Z) = P_m(Z)\]
+
+<center><b>Link 2</b></center>
+
+<p>The process determining Z does not change by removing the connection between Z and X. This is our second invariance link.</p>
+
+\[P(Z|X) = P_m(Z) = P(Z)\]
+
+<center><b>Link 3</b></center>
+
+<p>Z and X are d-separated in the manipulated model, and therefore are independent (having information about Z doesn’t tell us anything about X in the latter model). From link 3, it follows we can go one step further and obtain P(Z).</p>
+
+<p>Given these links, we begin from the causal diagram on the right and define our  <strong>do operator</strong>. We want to know, what is the probability of Y given that I intervene on X, denoted by do(X). It follows then that…</p>
+
+\[P(Y|do(X)) = P_m(Y|X)\]
+
+<center><b>by definition</b></center>
+<p><br /></p>
+
+<p>Next we expand the right side of the equation to account for Z</p>
+
+\[\sum_z P_m(Y|X,Z)P_m(Z|X)\]
+
+<p>By the  <a href="https://en.wikipedia.org/wiki/Law_of_total_probability">Law of Total Probability</a>
+,we are taking a weighted average of P(Y|X) over Z. This is how we control for the effect of Z.
+This is identical to Inverse Probability weighting and propensity score weighting techniques to control for confounding. Adam Kelleher has a great article showing the equivalence  <a href="https://medium.com/@akelleh/introducing-the-do-sampler-for-causal-inference-a3296ea9e78d">here</a>, 
+so definitely check it out if you’re interested in going deeper.</p>
+
+<p>Next we use the principle of d-separation of Z and X to obtain</p>
+
+\[\sum_z P_m(Y|X,Z)P_m(Z)\]
+
+<p>Finally we invoke the invariance link between the manipulated and observational distribution to get</p>
+
+\[\sum_z P(Y|X,Z)P(Z)\]
+
+<p>Using this last expression, called the <strong>adjustment formula</strong>, we have now defined how we can generate our interventional distribution, 
+\(P(Y|do(X))\), from our pre-intervention, observational data. This is a broad definition of the interventional distribution that works for 
+both continuous and discrete cases.</p>
+
+<p>For our drug trial example which is a discrete binary outcome, estimating the treatment effect using our derived causal expression, we could define the Average Treatment Effect (ATE) as</p>
+
+\[ATE = \sum_z P(Y=1|do(X=1),Z)P(Z) - \sum_z P(Y=1|do(X=0),Z)P(Z)\]
+
+<p>Thus, we obtain the same outcome using a randomized trial as we do by controlling for all pertinent confounders (denoted as Z above).</p>
+
+<p>The first term on the top is the observed treatment effect probability and the second is the counterfactual probability. Their difference, assuming Z stands for all confounders of Y and X, establishes the causal effect of treatment X on the outcome Y. Notice that Z could be either continuous or discrete itself, it does not matter. There is a beautiful flexibility apparent in the formulation.</p>
+
+<h1 id="final-matter">Final Matter</h1>
+
+<p>Those are the basics of Pearl’s Causal Inference. For alternate discussion on causality, read up on  <a href="https://en.wikipedia.org/wiki/Rubin_causal_model">Rubin’s Potential Outcomes Framework</a>. If you like debates between genius scientists,  <a href="https://statmodeling.stat.columbia.edu/2009/07/05/disputes_about/">this</a> resource will make you happy. For an application of causal reasoning to high dimensional datasets using Random Forest, see  <a href="https://www.gsb.stanford.edu/faculty-research/faculty/susan-athey">Susan Athey’s</a>  recent work  <a href="https://arxiv.org/pdf/1510.04342.pdf">here</a>. A great  <strong>intro book</strong>  by Amit Sharma and Emre Kiciman can be found  <a href="https://causalinference.gitlab.io/book/">here</a>. Finally, read up on the backdoor criterion, an important next step in causal inference which can be read about  <a href="http://bayes.cs.ucla.edu/BOOK-2K/ch3-3.pdf">here</a>.</p>
+
+<p>We have just scratched the surface of powerful concepts that really put the Science into Data Science. I hope this has been helpful to establish the theory before the implementation. I also hope that it has sparked your curiosity, so that you want to learn more and start to apply these principles in your work. Part 2 of this series will be a hands on application of Pearlian do calculus to a causal problem in the healthcare space using the DoWhy package.</p>
+
+<p>Stay Tuned! Thanks for your time, and God Bless.</p>
+
+</article>
+
+
+  <hr class="dingbat related mb6" />
+
+
+
+
+
+  
+<footer class="content" role="contentinfo">
+  <hr/>
+  
+    <p><small class="copyright">© 2022. All rights reserved.
+</small></p>
+  
+  
+    <p><small>Powered by <a class="external" href="https://hydejack.com/">Hydejack</a> v<span id="_version">9.1.6</span></small></p>
+  <hr class="sr-only"/>
+</footer>
+
+
+</main>
+
+  <hy-drawer
+  id="_drawer"
+  class=""
+  side="left"
+  threshold="10"
+  noscroll
+  
+>
+  <header id="_sidebar" class="sidebar" role="banner">
+    
+
+
+
+
+<div class="sidebar-bg sidebar-overlay" style="background-color:rgb(25,55,71);background-image:url(/images/banner.jpg)"></div>
+
+    <div class="sidebar-sticky">
+  <div class="sidebar-about">
+    
+    <a class="sidebar-title" href="/"><h2 class="h1">Carlos Brown</h2></a>
+    
+    
+      <p class="">
+        Freelance Data Scientist and Story Teller
+
+      </p>
+    
+  </div>
+
+  <nav class="sidebar-nav heading" role="navigation">
+    <span class="sr-only">Navigation:</span>
+<ul>
+  
+    
+      
+      <li>
+        <a
+          id="_drawer--opened"
+          href="/portfolio/"
+          class="sidebar-nav-item "
+          
+        >
+          Portfolio
+        </a>
+      </li>
+    
+      
+      <li>
+        <a
+          
+          href="/blog/"
+          class="sidebar-nav-item "
+          
+        >
+          Blog
+        </a>
+      </li>
+    
+      
+      <li>
+        <a
+          
+          href="/about/"
+          class="sidebar-nav-item "
+          
+        >
+          About
+        </a>
+      </li>
+    
+      
+      <li>
+        <a
+          
+          href="/form/"
+          class="sidebar-nav-item "
+          
+        >
+          Get in Touch
+        </a>
+      </li>
+    
+  
+</ul>
+
+  </nav>
+
+  
+  <div class="sidebar-social">
+    <span class="sr-only">Social:</span>
+<ul>
+  
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://github.com/carlosbrown2" title="GitHub" class="no-mark-external">
+      <span class="icon-github"></span>
+      <span class="sr-only">GitHub</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://www.linkedin.com/in/carlos-brown-eit" title="LinkedIn" class="no-mark-external">
+      <span class="icon-linkedin2"></span>
+      <span class="sr-only">LinkedIn</span>
+    </a>
+  </li>
+
+
+    
+  
+</ul>
+
+  </div>
+</div>
+  </header>
+</hy-drawer>
+<hr class="sr-only" hidden />
+
+</hy-push-state>
+
+
+  <!--[if gt IE 10]><!---->
+  <script nomodule>!function(){var t,n=document.createElement("script");!("noModule"in n)&&"onbeforeload"in n&&(t=!1,document.addEventListener("beforeload",function(e){if(e.target===n)t=!0;else if(!e.target.hasAttribute("nomodule")||!t)return;e.preventDefault()},!0),n.type="module",n.src=".",document.head.appendChild(n),n.remove())}();
+</script>
+  <script src="/assets/js/hydejack-9.1.6.js" type="module"></script>
+  <script src="/assets/js/LEGACY-hydejack-9.1.6.js" nomodule defer></script>
+  
+
+  
+
+<!--<![endif]-->
+  <!-- <script>
+  document.querySelector('hy-push-state').setAttribute('prefetch', '');
+
+  document.querySelectorAll('.sidebar a[href^="/"]').forEach(function (el) { 
+    el.addEventListener('click', function (e) {
+      if (el.pathname === window.location.pathname) {
+        e.preventDefault();
+        e.stopPropagation();
+        document.querySelector('hy-drawer').close();
+      }
+    });
+  });
+</script> -->
+
+<!--
+Code for integrating CloudFlare's email protection with Hydejack's single page app loading.
+-->
+<script>
+  document.getElementById('_pushState').addEventListener('hy-push-state-after', function (e) {
+    function e(e){
+      (console.error?console.error:console.log).call(console,e)
+    }
+
+    function t(e){
+      return l.innerHTML='<a href="'+e.replace(/"/g,"&quot;")+'"></a>',l.childNodes[0].getAttribute("href")
+    }
+
+    function r(e,t){
+      var r=e.substr(t,2);return parseInt(r,16)
+    }
+
+    function n(e,n){
+      for(var o="",c=r(e,n),a=n+2;a<e.length;a+=2){
+        var l=r(e,a)^c;
+        o+=String.fromCharCode(l)
+      }
+      return t(o)
+    }
+
+    var o="/cdn-cgi/l/email-protection#",
+        c=".__cf_email__",
+        a="data-cfemail",
+        l=document.createElement("div");
+
+    !function(){
+      for(var t=document.getElementsByTagName("a"),r=0;r<t.length;r++)
+        try{
+          var c=t[r],a=c.href.indexOf(o);
+          a>-1&&(c.href="mailto:"+n(c.href,a+o.length))
+        }catch(t){
+          e(t)
+        }
+    }(),
+    function(){
+      for(var t=document.querySelectorAll(c),r=0;r<t.length;r++)
+        try{
+          var o=t[r],l=n(o.getAttribute(a),0),i=document.createTextNode(l);
+          o.parentNode.replaceChild(i,o)
+        }catch(t){
+          e(t)
+        }
+    }()
+  });
+</script>
+
+
+
+
+
+<div hidden>
+  
+  <h2 class="sr-only">Templates (for web app):</h2>
+
+  <template id="_animation-template">
+  <div class="animation-main fixed-top">
+    <nav id="breadcrumbs" class="screen-only"><ul>
+  
+  
+</ul></nav>
+    <div class="content">
+      <div class="page"></div>
+    </div>
+  </div>
+</template>
+
+  <template id="_loading-template">
+  <div class="loading nav-btn fr">
+    <span class="sr-only">Loading…</span>
+    <span class="icon-cog"></span>
+  </div>
+</template>
+
+  <template id="_error-template">
+  <div class="page">
+    <h1 class="page-title">Error</h1>
+    
+    
+    <p class="lead">
+      Sorry, an error occurred while loading <a class="this-link" href=""></a>.
+
+    </p>
+  </div>
+</template>
+
+  <template id="_permalink-template">
+  <a href="#" class="permalink">
+    <span class="sr-only">Permalink</span>
+    <span class="content-hash"></span>
+  </a>
+</template>
+
+</div>
+
+
+</body>
+</html>

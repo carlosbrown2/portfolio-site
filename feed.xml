@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-06-17T16:49:36-06:00</updated><id>/feed.xml</id><title type="html">Carlos Brown</title><subtitle>Personal Website and Blog</subtitle><author><name>Carlos Brown</name></author><entry><title type="html">Portrait of a data scientist</title><link href="/blog/2022-05-29-Portrait/" rel="alternate" type="text/html" title="Portrait of a data scientist" /><published>2022-05-29T00:00:00-06:00</published><updated>2022-06-17T16:35:06-06:00</updated><id>/blog/Portrait</id><content type="html" xml:base="/blog/2022-05-29-Portrait/">&lt;p&gt;Like waking up the day after a 20 mile hike, he opens his eyes. Only he didn’t go on a hike yesterday, too much work. Many questions will come to his head, once it has seen more sunlight. He knows he stares at the artificial sun too long before bed. It is a habit that he pretends he wants to shake. Tonight, he’ll do better. For now, he needs an IV drip of caffeine. The Monster Energy drinks of his college days are no longer an option, his digestive tract has “matured”. He feels the rough carpet under his feet as he transitions from prone to standing. The walk downstairs isn’t bad. He’s awake, just not completely aware yet. The sound of the coffee brewing triggers a warm sensation in him. Every step of the ritual is comforting. If only he didn’t have to cycle the coffee to maintain positive energy levels. He makes a note on his phone, follow up on the latest coffee research, deep dive into timing and “chronographs”.&lt;/p&gt;
+
+&lt;p&gt;He sits down for the morning standup and doesn’t get the irony. Coffee takes 15 minutes to kick in. The meeting goes as usual, some chit chat about the weather at the beginning, some updates that could have been an email, no interaction except for the PM and the person he is asking an update from.This PM at least has the decent sense to keep the meeting short. It’s not really the length of meetings that is the problem though. It’s more so the frequency that leads to disruption of focus which leads to bad outcomes. Makes you wonder how work from home has actually led to increased productivity. Are they measuring that correctly? Perhaps their metric is misspecified. He makes a note to self to follow up on their research methodology.&lt;/p&gt;
+
+&lt;p&gt;The code editor initiates. He makes sure that he is using spaces, not tabs. Coders that use spaces get paid more, and if he knows anything, it’s that correlation and causation are synonymous. He tackles that pipeline bug from yesterday that is causing the whole analysis to stall. After an hour researching the esoteric error message, he solves it. The function was passed a string, not an integer. Wow, he tells himself, that was the straw that broke the camel’s back? And we sent people to the moon without python? Makes a note to self, learn static typing by next week or he has to donate money to Nancy Pelosi’s campaign. He works better from fear of loss than promise of reward. It’s science. The pipeline progresses, victory in this sprint is assured. But then, pandas starts acting a bit drunk and throws a ridiculous error. The line in the code that causes the error isn’t even in the traceback. Well, he could always switch to R. Then it would just fail silently without this useless error message fifty levels deep into the pandas module.&lt;/p&gt;
+
+&lt;p&gt;Sigh. Time for a break. Perhaps all of this work on the optimization module isn’t worth it, he thinks, as he sips on yirgacheffe. After all, they’ve only been able to generate a cost savings of 0.1% in the POC after 3 months of work. And the client is a mid-sized company, have they actually met the breakeven point? Oh well, there’s only so many hours in the day and he doesn’t have access to salary records at his company. Back at it, let’s run the pipeline again. It works! Why? Who cares, we’ll just call it a self-repairing system. Time to save the progress to show management, they will be so impressed. Tries to merge, git conflicts! Crap, well, maybe this super sophisticated branching model that no one follows isn’t all it’s cracked up to be. Billy and Miranda always bypass dev, but never get reprimanded for it. He gets down to the dregs of his lukewarm coffee, which are surprisingly delicious. He feels shame at enjoying dregs, makes note to self to follow up and see if this is normal behavior. He also notes that he and a python class are doing the same thing, making notes to self constantly. He wonders if he is an android, but quickly realizes that the evidence for it is too scary to consider. He gives into his confirmation bias, he is human.&lt;/p&gt;
+
+&lt;p&gt;A new email comes in, they’ve moth balled the project for now. Just increased that 80% never make it to production stat. How does it feel? Terrible. But the total data of the world doubles every two years. As long as there is electricity, there will be computational devices. And as long as they are around, the need for data scientists will be there. So he doesn’t worry. A new slack message comes in, invite to after work happy hour at Meehan’s. Just the thing to cheer him up. And he doesn’t forget, demand for his skill is there. His forecast model tells him it will only ever increase. So he doesn’t worry. But he does wonder if they should have just used the heuristic model to begin with. He makes a note, look into it tomorrow.&lt;/p&gt;</content><author><name>Carlos Brown</name></author><category term="blog" /><summary type="html">Like waking up the day after a 20 mile hike, he opens his eyes. Only he didn’t go on a hike yesterday, too much work. Many questions will come to his head, once it has seen more sunlight. He knows he stares at the artificial sun too long before bed. It is a habit that he pretends he wants to shake. Tonight, he’ll do better. For now, he needs an IV drip of caffeine. The Monster Energy drinks of his college days are no longer an option, his digestive tract has “matured”. He feels the rough carpet under his feet as he transitions from prone to standing. The walk downstairs isn’t bad. He’s awake, just not completely aware yet. The sound of the coffee brewing triggers a warm sensation in him. Every step of the ritual is comforting. If only he didn’t have to cycle the coffee to maintain positive energy levels. He makes a note on his phone, follow up on the latest coffee research, deep dive into timing and “chronographs”.</summary></entry><entry><title type="html">Causal Inference: Part 1</title><link href="/blog/2021-07-08-Causal-Inference-1/" rel="alternate" type="text/html" title="Causal Inference: Part 1" /><published>2021-07-08T00:00:00-06:00</published><updated>2022-06-17T16:36:08-06:00</updated><id>/blog/Causal%20Inference%201</id><content type="html" xml:base="/blog/2021-07-08-Causal-Inference-1/">&lt;blockquote&gt;
+  &lt;p&gt;This article is the first in a two part series that deals with the underlying concepts and mathematics of Pearlian causal inference. Part 2 will focus on a practical example using the  &lt;a href=&quot;https://github.com/microsoft/dowhy&quot;&gt;DoWhy&lt;/a&gt; library. If you prefer to begin with implementation first, skip to Part 2 when it becomes available then return here for the theory.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/1400/1*zKhsYFFaW_TJQbEC6UeRaQ.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Causality: Photo by  &lt;a href=&quot;https://unsplash.com/@nadir_syzygy?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Nadir sYzYgY&lt;/a&gt;  on  &lt;a href=&quot;https://unsplash.com/s/photos/cause-and-effect?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Unsplash&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Causal inference has undergone tremendous growth in recent years. This surge has happened in parallel with the rise of Data Science (DS) more broadly, but they still remain distinct in practice. While the science behind causal reasoning has benefited from recent work by Judea Pearl, Donald Rubin, Susan Athey, and many more, the insights they found have not made their way into mainstream DS, despite readily available implementations of these techniques. Many DS practitioners simply do not know about or employ causal reasoning in their workflows and that may be for several reasons…&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;The assumptions that go into causal reasoning, like Bayesian models, can be sliced, diced, and debated six ways from Sunday. (thanks to my Linkedin connection Gino Almondo for this insight)&lt;/li&gt;
+  &lt;li&gt;People think that correlations are automatically causal and are enough in themselves. Look for this in your workplace and you’ll be surprised how often it shows up.&lt;/li&gt;
+  &lt;li&gt;Causal inference is perceived to be hard. We don’t like hard.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;These points have varying degrees of validity, but ultimately miss the main point. The main point is that while there are challenges, we have in our hand a set of concepts and techniques that if applied with care, will completely transform the way that data science is practiced and perceived. We get to leverage domain knowledge to make robust inference. Let’s first set up the discussion with some preliminaries.&lt;/p&gt;
+
+&lt;h1 id=&quot;what-is-causal&quot;&gt;What is Causal?&lt;/h1&gt;
+
+&lt;p&gt;For this article, we will adopt the interventionist approach to defining causality. We all have an intuitive idea of what is causal, but to work in the language of mathematics we will need something more formal.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The definition is that for two distinct events A and B, A causes B if a change in A corresponds to a change in B, all else being equal.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Most of causal inference deals with ensuring the “all else is equal” part. There are other definitions that are similar, with vigorous debate surrounding which is most correct, but we will settle on this one and proceed.&lt;/p&gt;
+
+&lt;h1 id=&quot;how-do-we-establish-causality&quot;&gt;How do we establish Causality?&lt;/h1&gt;
+
+&lt;p&gt;Before the causal renaissance of recent times took place, the gold standard in establishing causal links was  &lt;strong&gt;randomized experimentation&lt;/strong&gt;.  In many ways they still are. So let’s set the stage by discussing causality in the context of a randomized experiment.&lt;/p&gt;
+
+&lt;p&gt;We have an outcome we would like to measure, named Y. We want to see if manipulating a specific treatment X will cause appreciable change in Y. In a randomized trial, such as a drug test, we would obtain a sufficiently large sample (using power analysis) of people  &lt;strong&gt;at random&lt;/strong&gt; from the broader population. The participants would be randomly assigned either the drug or a placebo. We would then measure the difference in Placebo group and Drug group, which is called the  &lt;strong&gt;Treatment Effect,&lt;/strong&gt; which can be done in a variety of ways (see cohen’s d or CATE). Any effect sizes would then be from the treatment alone and not due to any other factors, or  &lt;strong&gt;confounders&lt;/strong&gt;, that may be present.&lt;/p&gt;
+
+&lt;h2 id=&quot;random-assignment-ensures-that-all-else-being-equal-is-true-in-the-aggregate&quot;&gt;Random assignment ensures that “all else being equal” is true in the aggregate.&lt;/h2&gt;
+
+&lt;h1 id=&quot;the-real-world&quot;&gt;The Real World&lt;/h1&gt;
+
+&lt;p&gt;Now we come to the main hurdle that we face in causal inference. We don’t always have the time and money to do randomized experiments to establish a causal link. Even when we do, it may not be ethical to do so. We may in the end just have a set of observational data, and a few hypotheses we have built from observation. Can we test them using our non-randomized data? The answer is yes, and that is where our new toolkit comes into play. The techniques we will use will take our  &lt;strong&gt;observational&lt;/strong&gt; dataset and transform it into what is called the  &lt;strong&gt;interventional&lt;/strong&gt; dataset, from which we can draw causal inferences. The key here is that the data itself is not enough to establish causality (see  &lt;a href=&quot;https://en.wikipedia.org/wiki/Simpson%27s_paradox&quot;&gt;Simpson’s Paradox&lt;/a&gt;). We need more to reason robustly.&lt;/p&gt;
+
+&lt;p&gt;Given that the data is not enough, we will draw a literal picture of the world, called a causal graph, that encodes our  &lt;em&gt;assumptions&lt;/em&gt; about the data generating process. The  &lt;strong&gt;data generating process&lt;/strong&gt;  is the system whose dynamics we are trying to understand. This will help us to construct our interventional distribution, and test whether our model is valid.&lt;/p&gt;
+
+&lt;p&gt;We are mirroring the scientific process. We start with a hypothesis, then we model how the world behaves under that hypothesis using our causal graph. Finally we test our model using the data, which may uphold the hypothesis or not. Additionally, we further test the model to see how sensitive it is to changes, unaccounted confounders, and other gotchas. Iterate until your theories fit the facts.&lt;/p&gt;
+
+&lt;h1 id=&quot;going-deeper&quot;&gt;Going Deeper&lt;/h1&gt;
+
+&lt;p&gt;Let’s define a few terms…&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Intervention:&lt;/strong&gt; Actively doing X leads to a change in Y.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Examples: If I push my punk brother, does he get mad? If I give a person the drug, does it make them better?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;Counterfactual:&lt;/strong&gt; What if I hadn’t done X, would Y have still occured?&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Examples: If I hadn’t pushed my punk brother, would he have fallen down? If the patient had not been given the drug, would they have gotten better?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Reasoning with interventions and counterfactuals mirrors the normal, human approach to understanding causality. We are creating two different worlds and comparing the results in both. If we have an intervention case, and its counterfactual, we can establish causality. In a randomized experiment, we have those two readily in hand at the group level. When the level of analysis changes to the individual, then we realize one of the most fundamental problems we are trying to solve. We see that we have a  &lt;strong&gt;missing data&lt;/strong&gt;  problem. We do not have the counterfactual in hand, because the counterfactual for an individual doesn’t exist. You cannot be both treated and untreated simultaneously. Twin studies come close. Thankfully, we have ways to estimate this counterfactual while controlling for everything that may muddy the waters (confound) of our analysis. Remember that we are trying to hold all else equal, which is why we need a counterfactual. Let’s dive into the math to understand what’s going on better.&lt;/p&gt;
+
+&lt;h1 id=&quot;derivations&quot;&gt;Derivations&lt;/h1&gt;
+
+&lt;p&gt;Lorem ipsum \(f(x) = x^2\).&lt;/p&gt;
+
+&lt;p&gt;When we obtain observational data, what we are getting are probability distributions, whether the data is discrete or continuous. The two main types are joint probabilities and conditional probabilities. Anyone who has taken a basic probability course has covered these topics, but they provide the basis for construction of our causal formulas. Below are two data distributions.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/1400/1*SZfjiY5ZhCcNCAtVVXo6GA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Observation and Intervention Diagrams&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;On the left, we see the observed model which shows the interrelationships between the variables in our raw data. Given our definition of causality, we need to estimate the effect that changing X has on Y, independent of everything else. For our observed data, we are unable to make a change in X that would not also have corresponded to a change in Z, therefore changes in X are not indicative of causal changes in Y. We need a way to disentangle the confounding effect of Z on X, such that P(X&lt;/td&gt;
+      &lt;td&gt;Z) = P(Z), or to put it another way, we need to MANIPULATE the observed data to make the two variables independent. We need to perform graph surgery.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;The figure on the right shows us our desired state, post-surgical state. Z and X are not connected and therefore a change in one does not affect the other. This is called  &lt;strong&gt;d-separation&lt;/strong&gt;. And since X is still upstream of Y, any change in X will result in a causal change in Y, whether X is changing spontaneously or by direct adjustment.&lt;/p&gt;
+
+&lt;h2 id=&quot;assumptions&quot;&gt;Assumptions&lt;/h2&gt;
+
+&lt;p&gt;Now we move on to the derivation that allows us to transform our observed data distribution into our intervention data distribution. We start the derivation with three links between the two. We use P to denote our observational data distribution, and Pₘ to denote the manipulated, intervention data distribution.&lt;/p&gt;
+
+\[P(Y|X, Z) = P_m(Y|X, Z)\]
+
+&lt;center&gt;&lt;b&gt;Link 1&lt;/b&gt;&lt;/center&gt;
+
+&lt;p&gt;Since the incoming effects of Y remain unchanged between the two graphs, the probability distributions are the same as well. This is our first invariance link.&lt;/p&gt;
+
+\[P(Z) = P_m(Z)\]
+
+&lt;center&gt;&lt;b&gt;Link 2&lt;/b&gt;&lt;/center&gt;
+
+&lt;p&gt;The process determining Z does not change by removing the connection between Z and X. This is our second invariance link.&lt;/p&gt;
+
+\[P(Z|X) = P_m(Z) = P(Z)\]
+
+&lt;center&gt;&lt;b&gt;Link 3&lt;/b&gt;&lt;/center&gt;
+
+&lt;p&gt;Z and X are d-separated in the manipulated model, and therefore are independent (having information about Z doesn’t tell us anything about X in the latter model). From link 3, it follows we can go one step further and obtain P(Z).&lt;/p&gt;
+
+&lt;p&gt;Given these links, we begin from the causal diagram on the right and define our  &lt;strong&gt;do operator&lt;/strong&gt;. We want to know, what is the probability of Y given that I intervene on X, denoted by do(X). It follows then that…&lt;/p&gt;
+
+\[P(Y|do(X)) = P_m(Y|X)\]
+
+&lt;center&gt;&lt;b&gt;by definition&lt;/b&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Next we expand the right side of the equation to account for Z&lt;/p&gt;
+
+\[\sum_z P_m(Y|X,Z)P_m(Z|X)\]
+
+&lt;p&gt;By the  &lt;a href=&quot;https://en.wikipedia.org/wiki/Law_of_total_probability&quot;&gt;Law of Total Probability&lt;/a&gt;
+,we are taking a weighted average of P(Y|X) over Z. This is how we control for the effect of Z.
+This is identical to Inverse Probability weighting and propensity score weighting techniques to control for confounding. Adam Kelleher has a great article showing the equivalence  &lt;a href=&quot;https://medium.com/@akelleh/introducing-the-do-sampler-for-causal-inference-a3296ea9e78d&quot;&gt;here&lt;/a&gt;, 
+so definitely check it out if you’re interested in going deeper.&lt;/p&gt;
+
+&lt;p&gt;Next we use the principle of d-separation of Z and X to obtain&lt;/p&gt;
+
+\[\sum_z P_m(Y|X,Z)P_m(Z)\]
+
+&lt;p&gt;Finally we invoke the invariance link between the manipulated and observational distribution to get&lt;/p&gt;
+
+\[\sum_z P(Y|X,Z)P(Z)\]
+
+&lt;p&gt;Using this last expression, called the &lt;strong&gt;adjustment formula&lt;/strong&gt;, we have now defined how we can generate our interventional distribution, 
+\(P(Y|do(X))\), from our pre-intervention, observational data. This is a broad definition of the interventional distribution that works for 
+both continuous and discrete cases.&lt;/p&gt;
+
+&lt;p&gt;For our drug trial example which is a discrete binary outcome, estimating the treatment effect using our derived causal expression, we could define the Average Treatment Effect (ATE) as&lt;/p&gt;
+
+\[ATE = \sum_z P(Y=1|do(X=1),Z)P(Z) - \sum_z P(Y=1|do(X=0),Z)P(Z)\]
+
+&lt;p&gt;Thus, we obtain the same outcome using a randomized trial as we do by controlling for all pertinent confounders (denoted as Z above).&lt;/p&gt;
+
+&lt;p&gt;The first term on the top is the observed treatment effect probability and the second is the counterfactual probability. Their difference, assuming Z stands for all confounders of Y and X, establishes the causal effect of treatment X on the outcome Y. Notice that Z could be either continuous or discrete itself, it does not matter. There is a beautiful flexibility apparent in the formulation.&lt;/p&gt;
+
+&lt;h1 id=&quot;final-matter&quot;&gt;Final Matter&lt;/h1&gt;
+
+&lt;p&gt;Those are the basics of Pearl’s Causal Inference. For alternate discussion on causality, read up on  &lt;a href=&quot;https://en.wikipedia.org/wiki/Rubin_causal_model&quot;&gt;Rubin’s Potential Outcomes Framework&lt;/a&gt;. If you like debates between genius scientists,  &lt;a href=&quot;https://statmodeling.stat.columbia.edu/2009/07/05/disputes_about/&quot;&gt;this&lt;/a&gt; resource will make you happy. For an application of causal reasoning to high dimensional datasets using Random Forest, see  &lt;a href=&quot;https://www.gsb.stanford.edu/faculty-research/faculty/susan-athey&quot;&gt;Susan Athey’s&lt;/a&gt;  recent work  &lt;a href=&quot;https://arxiv.org/pdf/1510.04342.pdf&quot;&gt;here&lt;/a&gt;. A great  &lt;strong&gt;intro book&lt;/strong&gt;  by Amit Sharma and Emre Kiciman can be found  &lt;a href=&quot;https://causalinference.gitlab.io/book/&quot;&gt;here&lt;/a&gt;. Finally, read up on the backdoor criterion, an important next step in causal inference which can be read about  &lt;a href=&quot;http://bayes.cs.ucla.edu/BOOK-2K/ch3-3.pdf&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We have just scratched the surface of powerful concepts that really put the Science into Data Science. I hope this has been helpful to establish the theory before the implementation. I also hope that it has sparked your curiosity, so that you want to learn more and start to apply these principles in your work. Part 2 of this series will be a hands on application of Pearlian do calculus to a causal problem in the healthcare space using the DoWhy package.&lt;/p&gt;
+
+&lt;p&gt;Stay Tuned! Thanks for your time, and God Bless.&lt;/p&gt;</content><author><name>Carlos Brown</name></author><category term="blog" /><summary type="html">This article is the first in a two part series that deals with the underlying concepts and mathematics of Pearlian causal inference. Part 2 will focus on a practical example using the DoWhy library. If you prefer to begin with implementation first, skip to Part 2 when it becomes available then return here for the theory.</summary></entry><entry><title type="html">Reproducibility in Data Science</title><link href="/blog/2020-08-30-Reproducibility/" rel="alternate" type="text/html" title="Reproducibility in Data Science" /><published>2020-08-30T00:00:00-06:00</published><updated>2022-06-17T12:04:52-06:00</updated><id>/blog/Reproducibility</id><content type="html" xml:base="/blog/2020-08-30-Reproducibility/">&lt;p&gt;&lt;img src=&quot;/assets/img/blog/hongkong.jpeg&quot; alt=&quot;Cover Image&quot; class=&quot;lead&quot; width=&quot;1920&quot; height=&quot;1080&quot; loading=&quot;lazy&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Science as a pursuit has always had Reproducibility at its core. After all, if a claim is made about the physical world, and the evidence does not support such a claim, it doesn’t matter how much ideology or vested interest the idea has pushing it, there’s no reason for you to believe it. In a seemingly post truth world that we live in, where politicians, the media, and voices on social media propagate information that is often varying shades of dishonest, it pays dividends for your integrity to make  &lt;em&gt;reproducible&lt;/em&gt;  claims. It’s part and parcel to your job as a data scientist.&lt;/p&gt;
+
+&lt;p&gt;I think Reproducibility in data science is less well understood than Reproducibility in more established fields of science. For example, a study can clarify one or two simple claims that have to do with testing the mean difference between two or more groups. Examples include…&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Does treatment A make a statistically significant difference over placebo treatment B?&lt;/li&gt;
+  &lt;li&gt;Do groups exposed to differing lengths of stimuli exhibit varying outcomes?&lt;/li&gt;
+  &lt;li&gt;What is the effect size of a treatment?&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Since there is generally a publication bias towards statistically significant  &lt;a href=&quot;http://elsevier.com/connect/scientists-we-want-your-negative-results-too&quot;&gt;results&lt;/a&gt;, some research does not get published if its goal is to repeat what other studies have done. However when they are performed, if they do not come to the same conclusion under similar inputs, then it casts doubt on the original claims. The research has not been reproduced.&lt;/p&gt;
+
+&lt;p&gt;In the field of  &lt;strong&gt;structural engineering&lt;/strong&gt;  (my first career), we used a form of Reproducibility to validate designs performed by other people. Often an engineer would be tasked with designing a bridge, which is an awfully complex hunk of concrete and steel. In case you’ve never been outside, here is a picture of one.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/1400/0*7xr4pchdiL-UCbFV&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Photo by  &lt;a href=&quot;https://unsplash.com/@christopher__burns?utm_source=medium&amp;amp;utm_medium=referral&quot;&gt;Christopher Burns&lt;/a&gt;  on  &lt;a href=&quot;https://unsplash.com/?utm_source=medium&amp;amp;utm_medium=referral&quot;&gt;Unsplash&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Looks complicated huh? That engineer’s design was reviewed with a fine tooth comb many times before it was released to the contractors for construction. Often during the checking process, another engineer will make a design in parallel, given the same initial inputs, and then they compare notes. Same underlying phenomena, but arrived at by two, independent engineers. Any discrepancies usually highlight an inefficiency in the original design, or a point of disagreement on how the bridge should be modeled. The goal was consensus through  &lt;strong&gt;Reproducibility&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-reproducibility&quot;&gt;What is Reproducibility?&lt;/h2&gt;
+
+&lt;p&gt;There are more  &lt;strong&gt;dimensions&lt;/strong&gt;  to Reproducibility than simply obtaining the same result as we have discussed. Mastering all of these dimensions makes it more likely that your work will be useful for people and be utilized to influence decision making at a higher level. Let’s explore&lt;/p&gt;
+
+&lt;h2 id=&quot;same-code&quot;&gt;Same Code&lt;/h2&gt;
+
+&lt;p&gt;Your code should be well documented and should actually run. Go figure. There are two main factors here for success&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Dependency Management&lt;/strong&gt;  — how do you manage 3rd party packages, are they actively maintained, are the versions pinned? Do you have robust control over system level dependencies?&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Environment Management&lt;/strong&gt;  — what language version did you build your product in? Will the application environment use the same?&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;In a data science consulting role, many times these two pieces are neglected and are tacked on later when client delivery becomes more important. Both are crucial because you should expect that the analysis will be run on a different machine than where the code was written, or be executed in someone else’s well manicured environment, and how can you guarantee that they have the same history of package needs, system dependencies, and language versions as you?&lt;/p&gt;
+
+&lt;h2 id=&quot;same-data&quot;&gt;Same Data&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://realpython.com/python-data-version-control/&quot;&gt;&lt;em&gt;Data versioning&lt;/em&gt;&lt;/a&gt;  is becoming more and more popular. The c&lt;a href=&quot;https://drivendata.github.io/cookiecutter-data-science/&quot;&gt;ookie cutter data science&lt;/a&gt;  framework has a loose version of this built in. For example in cookie cutter, data is divided into  &lt;strong&gt;raw&lt;/strong&gt;,  &lt;strong&gt;interim&lt;/strong&gt;,  &lt;strong&gt;processed,&lt;/strong&gt; and  &lt;strong&gt;external&lt;/strong&gt;  data from third party sources. This intuitive way of splitting data can help you tell the story of data transformation, from its raw format into something able to be analyzed. Building a narrative around any data transformation using data versioning will allow you to validate with stakeholders that your logic is sound and your data can be trusted. The analysis can be extended, or even reverted as necessary which allows you to have the same agility that git offers code, but now in the data.&lt;/p&gt;
+
+&lt;h2 id=&quot;same-random-numbers&quot;&gt;Same Random Numbers&lt;/h2&gt;
+
+&lt;p&gt;Do you use random  &lt;a href=&quot;https://opendatascience.com/properly-setting-the-random-seed-in-ml-experiments-not-as-simple-as-you-might-imagine/&quot;&gt;seeds&lt;/a&gt;  in your machine learning pipeline? They allow for quick troubleshooting of problems as the pipeline is built out, because they introduce Reproducibility into your model outputs. This is especially important when you use a learning algorithm with random effects in it, like neural nets or random forest. Random numbers will always be a part of machine learning workflows, when train/test splits, cross validation, or optimization takes place to name a few. You can control them with seed numbers. Think of these seed numbers as controlling for a  &lt;strong&gt;confounding&lt;/strong&gt;  variable, the random error. If you don’t use seeds, then you don’t know if the change in model outputs, standard errors, importances, etc. is due to random effects or due to a change in the  &lt;strong&gt;hyper-parameters&lt;/strong&gt;. To ensure that this randomness is at least temporarily consistent while you build out your product, then setting a random seed controls and eliminates random deviation in your ML pipeline.&lt;/p&gt;
+
+&lt;h2 id=&quot;same-story&quot;&gt;Same Story&lt;/h2&gt;
+
+&lt;p&gt;Now that we have all of the above steps in place, we want to make sure that our work has an impact that lasts. We want to ensure the conclusions we’ve drawn replicate and persist themselves in the minds of stakeholders. We don’t just want our audience to nod their heads, and take no action on what has been presented. What makes these ideas stick in an effectual way?&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Stories&lt;/em&gt;. Whether it is your supervisor, a client, or C-level executives, a compelling story built around the data is the most effective way to achieve this goal. Our ancestors passed on knowledge this way because it was effective. Nothing has changed, it still works.&lt;/p&gt;
+
+&lt;p&gt;Here also is the link between Reproducibility and  &lt;strong&gt;Interpretability&lt;/strong&gt;. Telling a story around your data and model, and explaining why it made a prediction (using for example feature importances or  &lt;a href=&quot;https://github.com/slundberg/shap&quot;&gt;SHAP&lt;/a&gt;  values) leads to the Reproducibility of your conclusions in people’s minds. The idea takes hold because you’ve communicated a compelling narrative, and people know why they should care about it, distilling complex mathematics into something rich and actionable.  &lt;strong&gt;This is the art of the science&lt;/strong&gt;. It’s truly a beautiful combination when it all comes together.&lt;/p&gt;
+
+&lt;h2 id=&quot;in-summary&quot;&gt;In Summary&lt;/h2&gt;
+
+&lt;p&gt;What is the point of Reproducibility? To be able to not only have people run the same code and get similar results, but for them to come to the same conclusions, and for that to persist in time,  &lt;strong&gt;on disk and in human memory&lt;/strong&gt;. Don’t limit Reproducibility just to virtual environments, or even analytic conclusions, it’s a much richer, and crucial concept than that.&lt;/p&gt;
+
+&lt;p&gt;Something to think about: How can you introduce more Reproducibility into your own projects?&lt;/p&gt;
+
+&lt;p&gt;Thank you for reading this article! I hope it has been eye opening and informative. Feel free to connect with me on  &lt;a href=&quot;https://www.linkedin.com/in/carlos-brown-eit/&quot;&gt;Linkedin&lt;/a&gt;  if you have any questions or are just looking to expand your network.&lt;/p&gt;</content><author><name>Carlos Brown</name></author><category term="blog" /><summary type="html"></summary></entry><entry><title type="html">Georgia (and Machine Learning) on my mind</title><link href="/blog/2019-05-17-ML-for-Bridges/" rel="alternate" type="text/html" title="Georgia (and Machine Learning) on my mind" /><published>2019-05-17T00:00:00-06:00</published><updated>2022-06-17T12:04:52-06:00</updated><id>/blog/ML%20for%20Bridges</id><content type="html" xml:base="/blog/2019-05-17-ML-for-Bridges/">&lt;h2 id=&quot;harnessing-data-for-better-bridges&quot;&gt;Harnessing data for better bridges&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/1400/0*J6qIvX68rDKEgEYK&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;An inspector at work. Photo by  &lt;a href=&quot;https://unsplash.com/photos/qVZTU3lTKnU?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Amogh Manjunath&lt;/a&gt;  on  &lt;a href=&quot;https://unsplash.com/search/photos/bridge?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Unsplash&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;problem&quot;&gt;&lt;strong&gt;Problem&lt;/strong&gt;&lt;/h1&gt;
+
+&lt;p&gt;Recently, the American Society of Civil Engineers scored the overall health of America’s infrastructure as a D+. Our infrastructure is old. A major facet of this decaying group of assets is bridges. Understanding and managing the condition of these structures is crucial to the continuing goals of the Georgia Department of Transportation (GDOT). To aid these goals, our analysis will build predictive models to see when a bridge is in danger of needing repair or replacement. Our goal is to predict two measures of bridge condition,  &lt;strong&gt;condition rating&lt;/strong&gt;  and  &lt;strong&gt;sufficiency rating&lt;/strong&gt;, before the inspection occurs, using already available data.&lt;/p&gt;
+
+&lt;p&gt;GDOT (and other DOT’s) will benefit from the analysis in multiple ways.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A predictive model will allow  &lt;strong&gt;early detection&lt;/strong&gt;  of problems.&lt;/li&gt;
+  &lt;li&gt;It will allow more  &lt;strong&gt;efficient allocation&lt;/strong&gt;  of bridge inspector resources and may increase the success of the entire bridge inspection pipeline.&lt;/li&gt;
+  &lt;li&gt;Finally, the predictive model will provide for a  &lt;strong&gt;safer infrastructure&lt;/strong&gt;  network, as we are now using untapped data to ensure the health and safety of the public.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;datasets&quot;&gt;&lt;strong&gt;Datasets&lt;/strong&gt;&lt;/h1&gt;
+
+&lt;p&gt;The majority of our data comes from the freely available Bridge Inventory provided by the Federal Highway Administrations National Bridge Inventory (NBI)  &lt;a href=&quot;https://www.fhwa.dot.gov/bridge/nbi.cfm&quot;&gt;here&lt;/a&gt;. The data does not include elevation data, which we wanted to include as a feature, so we used the  &lt;a href=&quot;https://developer.mapquest.com/documentation/open/elevation-api/&quot;&gt;Open Elevation API&lt;/a&gt;  from MapQuest to access this dataset and combine it with the NBI data.&lt;/p&gt;
+
+&lt;h1 id=&quot;analysis&quot;&gt;&lt;strong&gt;Analysis&lt;/strong&gt;&lt;/h1&gt;
+
+&lt;p&gt;Data science is not a black box, and the best way to avoid it becoming one is to know your data really well. So we begin with Exploratory Data Analysis. First, let’s take a look at the distribution of bridge lengths in the state of Georgia.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/864/1*7D5cqTIJ-6tJiEtiFgrcnA.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It’s interesting to see that most bridges in Georgia are less than 100 ft long and I bet that goes against your intuition. A takeaway is that not all bridges are like the ones you see crossing the interstate.&lt;/p&gt;
+
+&lt;p&gt;What else do we want to know about bridges? We can take a look at the distribution of years that these bridges were built to get an idea of their age distribution.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/864/1*Y2gTQNoRG_iGZVEDr_9eRw.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We can see that a spike of construction happened in the late 1950’s, early 1960’s. Cool enough, this corresponds to an actual historical event, the passing of the Federal-Aid Highway Act by Dwight Eisenhower. This act created what is now the interstate system in America. Link  &lt;a href=&quot;https://www.fhwa.dot.gov/infrastructure/50interstate.cfm&quot;&gt;here&lt;/a&gt;. This is also another reason why our infrastructure in America, and more specifically in Georgia is in great need of repair. A lot of them belong to the Baby Boomer generation.&lt;/p&gt;
+
+&lt;p&gt;Let’s take a look at the distribution of bridges geographically in the state.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/864/1*u0gQG-sikrQTH53t6eA4dA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Atlanta dominates&lt;/p&gt;
+
+&lt;p&gt;Pretty neat, but this one jives with what we expect. Most of the bridges are located around the major metropolitan centers such as Atlanta, Augusta, Savannah, and Macon. Oh, and that blank spot at the bottom? That’s  &lt;a href=&quot;https://okeswamp.com/&quot;&gt;Okefenokee Swamp&lt;/a&gt;. Also note the distribution bars at the top and right.&lt;/p&gt;
+
+&lt;p&gt;Let’s also take a look at the distribution of condition ratings and sufficiency ratings, our variables we are trying to predict. Condition Rating is a discrete score from 0 to 9 that is given to each of three locations on a bridge, the Deck, Superstructure, and the Substructure. Think Deck as what a car drives on, Superstructure as mainly the beams that hold the deck up, and Substructure as the piers/columns/abutments that everything else sits on. Sufficiency rating on the other hand is a continuous score from 0 to 100 that is based heavily on condition rating, but also on other geometrical factors. We can see that all three have very similar distributions, and the superstructure seems to be in the best shape relatively.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/1400/1*lrBTU1wLhVFumgbSDHivyw.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;machine-learning&quot;&gt;Machine Learning&lt;/h1&gt;
+
+&lt;p&gt;In order to predict the bridge ratings, we have to prepare the data to be used in the machine learning models. This is called  &lt;strong&gt;Preprocessing&lt;/strong&gt;. Most of the time you do not simply dump the data into a black box model and hope for the best. In our case, the features that were selected are the following&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Features&lt;/strong&gt;: Latitude, Longitude, Elevation, Age, Structure Length, Design Load, Roadway Width, Annual Daily Traffic (ADT), Percent Trucks, Degrees Skew, Horizontal Clearance&lt;/p&gt;
+
+&lt;p&gt;These features are selected mainly through domain knowledge and are not generated artificially from the dataset. They all represent fairly accessible information about a bridge that an engineer could get access to.&lt;/p&gt;
+
+&lt;p&gt;All of the features are on different scales, and many have outliers, such as we saw in the Bridge Length plot above. These outliers, and the relative scale of the feature, could have oversized effects on the model produced from the data. Since this is not desirable, we use the  &lt;a href=&quot;https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.QuantileTransformer.html&quot;&gt;QuantileTransformer&lt;/a&gt;  from sklearn.preprocessing to prepare the data.&lt;/p&gt;
+
+&lt;h1 id=&quot;machine-learning-pipeline&quot;&gt;Machine Learning Pipeline&lt;/h1&gt;
+
+&lt;p&gt;For most models in this analysis, a pipeline was constructed with a transformer and  &lt;strong&gt;GridSearch&lt;/strong&gt;  over hyperparameters. The models were fitted to the data using nested cross validation and evaluated on a hold out set. Here is sample code for the Ridge Regression model.&lt;/p&gt;
+
+&lt;h1 id=&quot;model-performance&quot;&gt;Model Performance&lt;/h1&gt;
+
+&lt;p&gt;The model results after all steps were performed is shown below.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Regression models&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/1200/1*U_crpj66Sn1wmlLaNhKjQQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Classification Models&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/1200/1*sjk7IV1jPxmdnoZ3k1ZBTQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Overall we can see that the classification models outperform the regression models. This is mainly due to the Design Load feature. Design Load as used in our model is not truly a continuous variable, but does include new information for the model, therefore a classifier is better able to use the information than regression. The Logistic Regression binary classifier has an advantage over all the other models, which is discussed later.&lt;/p&gt;
+
+&lt;h1 id=&quot;model-evaluation&quot;&gt;Model Evaluation&lt;/h1&gt;
+
+&lt;p&gt;One of the best ways to evaluate a classifier model is to develop a  &lt;strong&gt;confusion matrix&lt;/strong&gt;. For all confusion matrices predicting any arbitrary number of n classes, an n x n matrix is developed in which the diagonals represent true predictions and any value off diagonal is an error in prediction. In the case of binary classification (is something, is not something), then the values off the diagonal of the matrix represent false positives and false negatives. The confusion matrix for the Random Forest classifier is a good example of the output, shown below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/1152/1*lDNjRdooAbwHRhTuewkgFg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Random Forest, non-random results&lt;/p&gt;
+
+&lt;h1 id=&quot;best-performing-model&quot;&gt;Best Performing Model&lt;/h1&gt;
+
+&lt;p&gt;We notice that the  &lt;strong&gt;Logistic Regression&lt;/strong&gt;  model — 2 class outperforms all models, but why is it head and shoulders above the rest? There are multiple reasons. One reason is that we mapped the 10 different condition rating values to 2, Poor/Good. If any of the the three locations have a condition rating of 4 or less, then the bridge is rated as Poor. In general, as you reduce the number of classes, the model will perform better and we have shown this to hold true in our case.&lt;/p&gt;
+
+&lt;p&gt;However, the results are not as rosy as they seem. Our 2 class model suffers from a high class imbalance. Referring back to the plots of condition rating above, we can see that when we re-aggregate our target variable into two classes, most of them will be in the class “Good” which means that the condition rating does not represent a deficient rating. Hence, the high accuracy of the logistic regression model is over inflated simply because most values do not belong to the “Poor” class. Metrics such as Precision and Recall will give a more accurate estimate of model performance than accuracy in this case.&lt;/p&gt;
+
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+
+&lt;p&gt;With this analysis, we have shown that we can meaningfully predict the outcomes of bridge sufficiency ratings and bridge condition ratings in the state of Georgia using easily obtainable data from the FHWA. These models can be deployed to aid the DOT in their asset management business and will provide significant value to the department and the taxpayers.&lt;/p&gt;
+
+&lt;p&gt;This article only scratches the surface of the full analysis. Check out the full notebook and supporting code on  &lt;strong&gt;Github&lt;/strong&gt;  &lt;a href=&quot;https://github.com/carlosbrown2/Springboard/blob/master/Capstone%20Project%201/Capstone%20Project%201.ipynb&quot;&gt;here&lt;/a&gt;&lt;/p&gt;</content><author><name>Carlos Brown</name></author><category term="blog" /><summary type="html">Harnessing data for better bridges</summary></entry></feed>
