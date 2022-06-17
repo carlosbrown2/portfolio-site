@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Causal Inference for Data Scientists - Part 1
+title: Causal Inference - Part 1
 description: Techniques you didn’t know you needed
 sitemap: false
 hide_last_modified: true
 ---
-# Causal Inference for Data Scientists: Part 1
+# Causal Inference: Part 1
 
 > This article is the first in a two part series that deals with the underlying concepts and mathematics of Pearlian causal inference. Part 2 will focus on a practical example using the  [DoWhy](https://github.com/microsoft/dowhy) library. If you prefer to begin with implementation first, skip to Part 2 when it becomes available then return here for the theory.
 
@@ -103,37 +103,37 @@ Z and X are d-separated in the manipulated model, and therefore are independent 
 
 Given these links, we begin from the causal diagram on the right and define our  **do operator**. We want to know, what is the probability of Y given that I intervene on X, denoted by do(X). It follows then that…
 
-$$
-P(Y|do(X)) = P_m(Y|X)
-$$
+$$ P(Y|do(X)) = P_m(Y|X) $$
 
 <center><b>by definition</b></center>
+<br>
 
 Next we expand the right side of the equation to account for Z
 
-$$
-\sum_z P_m(Y|X,Z)P_m(Z|X)
-$$
+$$\sum_z P_m(Y|X,Z)P_m(Z|X)$$
 
-By the  [Law of Total Probability](https://en.wikipedia.org/wiki/Law_of_total_probability), we are taking a weighted average of P(Y|X) over Z. This is how we control for the effect of Z. This is identical to Inverse Probability weighting and propensity score weighting techniques to control for confounding. Adam Kelleher has a great article showing the equivalence  [here](https://medium.com/@akelleh/introducing-the-do-sampler-for-causal-inference-a3296ea9e78d), so definitely check it out if you’re interested in going deeper.
+By the  [Law of Total Probability](https://en.wikipedia.org/wiki/Law_of_total_probability)
+,we are taking a weighted average of P(Y|X) over Z. This is how we control for the effect of Z.
+This is identical to Inverse Probability weighting and propensity score weighting techniques to control for confounding. Adam Kelleher has a great article showing the equivalence  [here](https://medium.com/@akelleh/introducing-the-do-sampler-for-causal-inference-a3296ea9e78d), 
+so definitely check it out if you’re interested in going deeper.
 
 Next we use the principle of d-separation of Z and X to obtain
 
-![](https://miro.medium.com/max/492/1*oQ-MWdb5acTFyPBHl5dGlA.png)
+$$ \sum_z P_m(Y|X,Z)P_m(Z) $$
 
 Finally we invoke the invariance link between the manipulated and observational distribution to get
 
-![](https://miro.medium.com/max/448/1*Ws-MJXq6EnxE3UOXxmxUMA.png)
+$$ \sum_z P(Y|X,Z)P(Z) $$
 
-Adjustment Formula
+Using this last expression, called the **adjustment formula**, we have now defined how we can generate our interventional distribution, 
+P(Y|do(X)), from our pre-intervention, observational data. This is a broad definition of the interventional distribution that works for 
+both continuous and discrete cases.
 
-Using this last expression, called the  **adjustment formula**, we have now defined how we can generate our interventional distribution, P(Y|do(X)), from our pre-intervention, observational data. This is a broad definition of the interventional distribution that works for both continuous and discrete cases.
 
 For our drug trial example which is a discrete binary outcome, estimating the treatment effect using our derived causal expression, we could define the Average Treatment Effect (ATE) as
 
-![](https://miro.medium.com/max/918/1*gQ_EYHQfCEYtLmkNabZj0Q.png)
+$$ ATE = \sum_z P(Y=1|do(X=1),Z)P(Z) - \sum_z P(Y=1|do(X=0),Z)P(Z) $$
 
-Randomized Trial
 
 Thus, we obtain the same outcome using a randomized trial as we do by controlling for all pertinent confounders (denoted as Z above).
 

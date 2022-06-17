@@ -12,4 +12,4 @@ redirect_from:
 <!--author-->
 
 
-[Get in Touch](/form.md)
+[Get in Touch](/form.md) --or-- [Check out my blog](/blog/)

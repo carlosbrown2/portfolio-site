@@ -41,7 +41,7 @@ logo:
 author:
   # Used by `jekyll-feed`:
   name:                Carlos Brown
-  email:               <mail@domain.tld>
+  # email:               <mail@domain.tld>
   # # Used by `jekyll-seo-tag`:
   # twitter:             <username>
   social:
@@ -364,7 +364,6 @@ plugins:
 social:
   name:                Carlos Brown
   links:
-    - https://twitter.com/<username>
     - https://github.com/carlosbrown2
 
 
