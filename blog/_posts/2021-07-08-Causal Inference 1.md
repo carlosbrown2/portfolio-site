@@ -126,7 +126,7 @@ Finally we invoke the invariance link between the manipulated and observational 
 $$ \sum_z P(Y|X,Z)P(Z) $$
 
 Using this last expression, called the **adjustment formula**, we have now defined how we can generate our interventional distribution, 
-P(Y|do(X)), from our pre-intervention, observational data. This is a broad definition of the interventional distribution that works for 
+$$ P(Y|do(X))$$, from our pre-intervention, observational data. This is a broad definition of the interventional distribution that works for 
 both continuous and discrete cases.
 
 
