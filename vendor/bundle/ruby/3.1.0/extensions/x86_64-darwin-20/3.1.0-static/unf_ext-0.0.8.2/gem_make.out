@@ -1,0 +1,16 @@
+current directory: /Users/carlosbrown/Documents/GitHub/portfolio-site/vendor/bundle/ruby/3.1.0/gems/unf_ext-0.0.8.2/ext/unf_ext
+/Users/carlosbrown/.rubies/ruby-3.1.1/bin/ruby -I /Users/carlosbrown/.rubies/ruby-3.1.1/lib/ruby/3.1.0 -r ./siteconf20220622-21835-o6yr4v.rb extconf.rb
+checking for -lstdc++... yes
+creating Makefile
+
+current directory: /Users/carlosbrown/Documents/GitHub/portfolio-site/vendor/bundle/ruby/3.1.0/gems/unf_ext-0.0.8.2/ext/unf_ext
+make DESTDIR\= clean
+
+current directory: /Users/carlosbrown/Documents/GitHub/portfolio-site/vendor/bundle/ruby/3.1.0/gems/unf_ext-0.0.8.2/ext/unf_ext
+make DESTDIR\=
+compiling unf.cc
+linking shared-object unf_ext.bundle
+
+current directory: /Users/carlosbrown/Documents/GitHub/portfolio-site/vendor/bundle/ruby/3.1.0/gems/unf_ext-0.0.8.2/ext/unf_ext
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 unf_ext.bundle ./.gem.20220622-21835-ke0utc
