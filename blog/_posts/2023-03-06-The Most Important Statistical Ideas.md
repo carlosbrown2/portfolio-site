@@ -78,7 +78,7 @@ Adaptive decision analysis is an important field in artificial intelligence that
 
 Reinforcement learning is another important technique in ADA that involves learning optimal behavior through trial and error (sounds familiar, eh programmers?). This technique has been successfully applied to a wide range of practical tasks, including game playing. For example, the game of Go has long been considered a challenging problem for AI due to the search space of possible moves being larger than the number of atoms in the universe. In 2016, the AlphaGo system, developed by Google DeepMind, defeated the world champion Lee Sedol at Go, demonstrating the power of reinforcement learning in developing adaptive decision-making systems.
 
-![AlphaGo](/assets/img/blog/alphago.png){:style="display:block; margin-left:auto; margin-right:auto"; height="600px" width="360px"}
+![AlphaGo](/assets/img/blog/alphago.png){:style="display:block; margin-left:auto; margin-right:auto"; height="600px"; width="360px"}
 
 Multi-armed bandits are another important class of problems, which involves balancing the exploration-exploitation tradeoff. In these problems, the decision-maker must balance between trying out new actions (exploration) and exploiting the currently known best action (exploitation). Multi-armed bandits have important applications in areas such as clinical trials, online advertising, and recommendation systems.
 
