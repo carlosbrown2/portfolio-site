@@ -9,18 +9,19 @@ hide_description: true
 
 ### Technology I've had significant experience with include:
 
-Python, R, Plotly, Dash, Docker[Compose], Airflow, Pyspark, Dask, Redis, DVC, Postgres, and Poppler.
+Python, R, Plotly, Dash, Docker[Compose], Airflow, Pyspark, Dask, Redis, SQL, Postgres, Snowflake and Poppler.
 
-I have built models for most supervised learning algorithms, and a few unsupervised. Additionally, I have experience building and deploying analytical web apps, some with NLP based backends: Word Embeddings and Rule Based models.
+I have built models for most supervised learning algorithms, and a few unsupervised, mostly for customer segmentation type tasks. I have deep experience in marketing analytics from a platform and analysis perspective. Additionally, I have experience building and deploying analytical web apps, some with NLP based backends: Word Embeddings and Rule Based models. Finally, I have done several types of GIS related modeling such as Least Costs Paths Analysis and Spatial Regressions.
 
 ### Domains I have built solutions for
 
+- Marketing Analytics
 - Congressional Appropriations
 - Food Tech
 - Human Migration
 - Healthcare
 - Workforce Optimization
-- Marketing Analytics
+
 
 
 ### Other tech I've used:
@@ -28,16 +29,6 @@ I have built models for most supervised learning algorithms, and a few unsupervi
 I have dabbled in causal modeling as an area of interest. I used a variety of Front-end tech to create this website. When I was a kid, I programmed a TI-83 Basic quadratic equation program to help me on my Algebra tests, though I don't know if that's relevant now :)
 
 # Select Projects
-
-  <div class="card">
-    <img src="/assets/img/blog/stocks.jpeg" alt="Stocks" class="card__image"/>
-    <div class="card__content">
-    <a href="https://divscreener.herokuapp.com/" class="card__title">
-      <span class="card__title">Dividend Screener</span>
-    </a>
-      <h4>A handy dashboard for evaluating key metrics of dividend stocks</h4>
-    </div>
-  </div>
 
   <div class="card">
     <img src="/assets/img/blog/stethoscope.jpeg" alt="Stethoscope" class="card__image"/>

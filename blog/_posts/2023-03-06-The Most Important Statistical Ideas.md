@@ -78,7 +78,7 @@ Adaptive decision analysis is an important field in artificial intelligence that
 
 Reinforcement learning is another important technique in ADA that involves learning optimal behavior through trial and error (sounds familiar, eh programmers?). This technique has been successfully applied to a wide range of practical tasks, including game playing. For example, the game of Go has long been considered a challenging problem for AI due to the search space of possible moves being larger than the number of atoms in the universe. In 2016, the AlphaGo system, developed by Google DeepMind, defeated the world champion Lee Sedol at Go, demonstrating the power of reinforcement learning in developing adaptive decision-making systems.
 
-![AlphaGo](/assets/img/blog/alphago.png)
+![AlphaGo](/assets/img/blog/alphago.png){:style="display:block; margin-left:auto; margin-right:auto"; height="600px" width="360px"}
 
 Multi-armed bandits are another important class of problems, which involves balancing the exploration-exploitation tradeoff. In these problems, the decision-maker must balance between trying out new actions (exploration) and exploiting the currently known best action (exploitation). Multi-armed bandits have important applications in areas such as clinical trials, online advertising, and recommendation systems.
 
@@ -93,7 +93,7 @@ This section was a bit surprising to me. The reason being that EDA is such an op
 
 Asymptotic theory is important for inference, as it allows us to gain insights about the population based only on a sample. All of statistics exists because we don't have omniscience and/or infinite resources. However, asymptotic theory is not always sufficient to fully understand the properties of a dataset, especially when the sample size is small or the data is non-normal or non-linear. One classic example is Anscombe's quartet, which consists of four different datasets that have identical summary statistics, but very different distributions and patterns. 
 
-![Anscombe's Quartet](/assets/img/blog/Anscombe's_quartet_3.svg)
+![Anscombe's Quartet](/assets/img/blog/Anscombe's_quartet_3.svg){:style="display:block; margin-left:auto; margin-right:auto"}
 
 Asymptotic theory assumes that the sample size is large enough for the law of large numbers to hold, and that the distribution of the estimator converges to a normal distribution as the sample size approaches infinity. However, this assumption may not hold in small sample sizes or when the data is non-normally distributed. This is where exploratory data analysis (EDA) becomes important, as it allows us to visually inspect the data and identify patterns that may not be apparent through asymptotic theory. EDA helps to identify potential issues such as outliers, skewness, and non-linear relationships, which can help inform the choice of appropriate statistical methods for the data. In summary, while asymptotic theory is an important part of statistical inference, it is not always sufficient, and exploratory data analysis is a critical tool for identifying potential issues and guiding the appropriate statistical methodology for a given dataset.
 
