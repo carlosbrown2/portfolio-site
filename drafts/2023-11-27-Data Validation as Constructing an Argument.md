@@ -61,7 +61,7 @@ Understand that just as an argument can be valid and yet contains false premises
 - Validate using another source/method - think of it like a reproducibility study, do the results from this other person or from yourself using another method match what was done before?
 
 ## Application
-Building checks like these into your workflow will pay dividends far into the future. The great thing is that you don't need a lot of time or effort to perform most of them. Thinking about the data in terms of validity and soundness gives you a framework to construct more checks that are pertinent for your use case.
+Building checks like these into your workflow will pay dividends far into the future. The great thing is that you don't need a lot of time or effort to perform most of them. Thinking about the data in terms of validity and soundness gives you a framework to construct more checks that are pertinent for your use case. There are plenty of programming packages and tools that help perform data validation. Having the why will make you more effective with whatever tool you choose.
 
 ### Closing Exercise
 As a closing exercise, I encourage you to think of other types of data checks not listed here. Do they pertain to validity, soundness, or a combination of both?
